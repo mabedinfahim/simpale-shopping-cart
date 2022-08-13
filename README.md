@@ -1,7 +1,7 @@
-#Simple-shopping-cart
+# Simple-shopping-cart
 
 
-#Lessons
+# Lessons
 
 1. Create react app
     1. npx create-react-app
@@ -26,3 +26,11 @@
     1. list items in cartItems;
     2. calculate sub total
     3. show checkout button 
+
+7. Save cart items in localStorage
+    1. save items in local storage on add and onRemove
+    2. use useEffect to get items from local storage
+
+8. Use useTransaction and useDeferedValue
+    1. read items in local storage using useTransaction
+    2. changes cartItems length to transition effect.
