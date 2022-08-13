@@ -23,8 +23,8 @@ a{
 }
 
 img.small{
-  max-width: 8rem;
-  height:6rem;
+  max-width: 10rem;
+  height:8rem;
 }
 
 button{
@@ -62,11 +62,29 @@ button{
   margin:8px;
 }
 
+button.add{
+  background: rgb(87, 79, 245);
+  width: 1.5rem;
+}
+
+button.remove{
+  background: rgb(238, 44, 10);
+  width: 1.5rem;
+}
+
 button.bage{
   background: red;
   border:none;
   color:#fff;
   width: 1.5rem;
+}
+
+.p-1{
+  padding:1rem;
+}
+
+.text-right{
+  text-align: right;
 }
 
 @media screen and (min-width:800px) {

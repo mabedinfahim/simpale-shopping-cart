@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Header = ({cartItems}) => {
+const Header = ({countCartItems}) => {
     return (
         <div className="row center block">
             <div>
@@ -10,7 +10,7 @@ const Header = ({cartItems}) => {
             </div>
             <div>
                 <a href="#/cart">Cart
-                {cartItems.length? <button className="bage">{cartItems.length}</button>:""}
+                {countCartItems? <button className='bage'>{countCartItems}</button>:""}
                 </a>   <a href="#/signin">Sign in</a>
             </div>
         </div>
