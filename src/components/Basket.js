@@ -4,7 +4,7 @@ const Basket = ({cartItems,onAdd,onRemove}) => {
     const itemsPrice=cartItems.reduce((a,c)=>a+c.qty*c.price,0)
     const texPrice=itemsPrice*0.14;
     const shippingPrice=itemsPrice>2000? 0:20;
-    const totalPrice=itemsPrice+texPrice+shippingPrice;
+    const totalPrice=(itemsPrice+texPrice+shippingPrice);
     return (
         <aside className="block col-1">
            <h2>Cart Items</h2>
@@ -35,11 +35,11 @@ const Basket = ({cartItems,onAdd,onRemove}) => {
                    <div className="col-1 text-right">${shippingPrice.toFixed(2)}</div>
                 </div>
                 <div className="row">
-                   <div className="col-2">Total Price</div>
-                   <div className="col-1 text-right">${totalPrice.toFixed(2)}</div>
+                   <div className="col-2 fw-700">Total Price</div>
+                   <div className="col-1 text-right fw-700">${totalPrice.toFixed(2)}</div>
                 </div>
                 <hr />
-                <button onClick={()=>alert("checkout implement")}>Check out</button>
+                <button className="fw-700"onClick={()=>alert("checkout implement")}>Check out</button>
             </>
            )}
         </aside>
