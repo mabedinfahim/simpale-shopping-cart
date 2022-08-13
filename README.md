@@ -31,6 +31,6 @@
     1. save items in local storage on add and onRemove
     2. use useEffect to get items from local storage
 
-8. Use useTransaction and useDeferedValue
+8. Use useTransaction and useDeferredValue
     1. read items in local storage using useTransaction
     2. changes cartItems length to transition effect.
