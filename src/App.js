@@ -11,6 +11,9 @@ function App() {
     if(exist){
       const newCartItems=cartItems.map(x=>x.id===product.id ? {...exist,qty:exist.qty+1} : x)
       setCartItems(newCartItems)
+    }else{
+      const newCartItems=[...cartItems,{...product,qty:1}]
+      setCartItems(newCartItems)
     }
   }
   const onRmove=()=>{
